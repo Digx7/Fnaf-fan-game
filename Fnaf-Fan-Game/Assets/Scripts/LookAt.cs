@@ -25,8 +25,8 @@ public class LookAt : MonoBehaviour
         
         if(Physics.Raycast(origin, fwd, out hit, distance))
         {
-            Debug.Log("Looking at " + hit.collider.gameObject.name + 
-            "\nWith tag " + hit.collider.gameObject.tag);
+            // Debug.Log("Looking at " + hit.collider.gameObject.name + 
+            // "\nWith tag " + hit.collider.gameObject.tag);
 
             if(hit.collider.gameObject != lastObjectSeen)            // Keeps us from updating the same object every frame
             {
